@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1508</width>
+    <height>811</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Simulator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="exit_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>770</y>
+      <width>199</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1501</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>2/3 Frequency Divider</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;2/3 Frequency Divider&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>121</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Fira Sans</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Circuit Diagram:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>1001</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/main/circuit_diagram_final1.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>0</y>
+        <width>471</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Working</string>
+       </attribute>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>371</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Has 2 inputs, the clock signal `clk` &lt;br&gt;and the modulus control signal `mc`.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;The program divides the input frequency &lt;br&gt;signal by reading the modulus control &lt;br&gt;or `mc` value. (This is specified in the testbench)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;The program runs of trackers for the &lt;br&gt;main clock line `clk` based on positive and &lt;br&gt;negative edges which triggers the &lt;br&gt;output clock lines `clk_out` accordingly.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p align=&quot;justify&quot;&gt;The above is simulated using flip-flops, &lt;br&gt;multiplexers, subtractors, decoders, registers &lt;br&gt;and ripple carry adders. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;
+&lt;table border=&quot;6&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;solid black&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;th&gt;Value of &lt;code&gt;mc&lt;/code&gt; and its operation&lt;/th&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Value of &lt;code&gt;mc&lt;/code&gt; &lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Operation&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;0010&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Divide by 2&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;0011&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Divide by 3&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Demonstration</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>244</y>
+          <width>201</width>
+          <height>62</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="vvp_out_2">
+           <property name="text">
+            <string>View VVP Output for mc = 2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="vvp_out_3">
+           <property name="text">
+            <string>View VVP Output for mc = 3</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>201</width>
+          <height>62</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="gtkwave_2">
+           <property name="text">
+            <string>GTKWave output for mc = 2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="gtkwave_3">
+           <property name="text">
+            <string>GTKWave output for mc = 3</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>451</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Compiled using commands:&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;for MC = 2&lt;br/&gt;
+&lt;span style=&quot; font-family:'monospace';&quot;&gt;iverilog -o frequency_divider frequency_divider.v&lt;br&gt; frequency_divider_tb_2.v&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;vvp frequency_divider&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;for MC = 3&lt;br/&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;iverilog -o frequency_divider frequency_divider.v&lt;br&gt; frequency_divider_tb_3.v&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot; font-family:'monospace';&quot;&gt;vvp frequency_divider&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Code</string>
+       </attribute>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>451</width>
+          <height>581</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre&gt;
+module frequency_divider(clk,reset,mc,
+pos_count,neg_count,clk_out);
+
+input [3:0] mc;  
+input clk;
+input reset;
+output clk_out;
+     
+output reg [3:0] pos_count, neg_count;
+reg c;
+wire [1:0] r_nxt;
+
+always @(posedge clk)
+if (reset)
+    pos_count =0;
+else 
+    pos_count= pos_count +1;
+     
+always @(negedge clk)
+if (reset)
+begin
+    neg_count =0; pos_count=0;
+end
+else  if (neg_count ==(mc) &amp;&amp; pos_count ==(mc+1)) 
+begin
+    neg_count = 0;pos_count=0;
+end
+else 
+    neg_count= neg_count +1;
+
+assign clk_out = (pos_count +neg_count&gt; (mc));
+endmodule
+&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Experimental</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>441</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Divide-by-n circuit</string>
+        </property>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>421</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This circuit can also divide the given input frequency &lt;br&gt;signal by 1,4,5,6,7.&lt;/p&gt;&lt;p&gt;Enter value of n and test&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>250</y>
+          <width>201</width>
+          <height>62</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="vvp_n">
+           <property name="text">
+            <string>View VVP Output for mc = n</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="gtk_n">
+           <property name="text">
+            <string>GTKWave for mc = n</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>161</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>Enter value of n</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="err_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>381</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>About</string>
+       </attribute>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>361</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1 style=&quot; margin-top:18px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:xx-large; font-weight:600;&quot;&gt;About this Project&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;This is a project to demonstrate the working of a 
+&lt;br&gt;2/3-frequency-divider&lt;br/&gt;&lt;br/&gt;Tools Used: &lt;span style=&quot; font-family:'monospace';&quot;&gt;iverilog, python and qt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;br/&gt;Team members &lt;/p&gt;&lt;table border=&quot;2&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;solid black&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Name &lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;SRN&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Arunvenkat&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;PES2UG20CS068&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ashutosh&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;PES2UG20CS071&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ashutosh Routray&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;PES2UG20CS072&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Claudius D'Souza&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;PES2UG20CS097&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="circuit.qrc"/>
+ </resources>
+ <connections/>
+</ui>
