@@ -1,5 +1,6 @@
 # 2-by-3-frequency-divider
 ## Abstract of the project:
+### CONTRIBUTERS: Ashutosh, Ashutosh Routray, Claudius D'Souza
 ### Aim: Design an algorithm to simulate a 2-by-3-frequency divider in iverilog .
 ### Working
 - Has 2 inputs, the clock signal clk and the modulus control signal mc .
@@ -19,5 +20,5 @@ Few major components used are Ripple carry adders, subtractors, decoders and reg
 3. Registers: These are collection of flipflops, wherein each flipflop is used to store single bit data.Thus for an n bit input data to be stored, a n bit register is used which consists of n flipflops
 4. Subtractors: It is a combinational logic circuit used to perform subtraction of 3 input bits, minuend, subtrahend and borrow in. It generates two outputs, difference and borrow out. Subtractors consist of n full adders and n half adders.
 ## Circuit Diagram:
-
+![Circuit Diagram](circuit_diagram.png)
 The ÷2/3 circuit employs an OR gate to permit ÷3 operation if the modulus control (MC) is low or ÷2 operation if it is high.
