@@ -1,6 +1,6 @@
 # 2-by-3-frequency-divider
-## Abstract of the project:
 ### CONTRIBUTORS: Ashutosh, Ashutosh Routray, Claudius D'Souza
+## Abstract of the project:
 ### Aim: Design an algorithm to simulate a 2-by-3-frequency divider in iverilog .
 ### Working
 - Has 2 inputs, the clock signal clk and the modulus control signal mc .
@@ -22,3 +22,34 @@ Few major components used are Ripple carry adders, subtractors, decoders and reg
 ## Circuit Diagram:
 ![Circuit Diagram](circuit_diagram.png)
 The ÷2/3 circuit employs an OR gate to permit ÷3 operation if the modulus control (MC) is low or ÷2 operation if it is high.
+## Output Screenshots
+Execution command:
+```
+# for MC = 2
+iverilog -o frequency_divider frequency_divider.v frequency_divider_tb_2.v
+# for MC = 3
+iverilog -o frequency_divider frequency_divider.v frequency_divider_tb_3.v
+```
+VVP Screenshot for MC=2:
+<br>
+![VVP 2](ss_mc_2.png)
+<br><br>
+GTKWave Screenshot for MC=2:
+<br>
+![GTK 2](gtk_mc_2.png)
+<br><br>
+VVP Screenshot for MC=3:
+<br>
+![VVP 3](ss_mc_3.png)
+<br><br>
+GTKWave Screenshot for MC=3:
+<br>
+![GTK 3](gtk_mc_3.png)
+<br><br>
+## Applications:
+Frequency Divider Circuits or Frequency Dividers are an integral part of many communication and audio based systems like:
+1. Frequency Synthesizers
+2. Audio Equipment
+3. Radar and Satellite Communication
+4. Military Equipment
+5. RF Devices
