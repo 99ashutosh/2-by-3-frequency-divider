@@ -1,5 +1,5 @@
 # 2-by-3-frequency-divider
-### CONTRIBUTORS: Ashutosh, Ashutosh Routray, Claudius D'Souza
+### CONTRIBUTORS: Arunvenkat C.A., Ashutosh, Ashutosh Routray, Claudius D'Souza
 ## Abstract of the project:
 ### Aim: Design an algorithm to simulate a 2-by-3-frequency divider in iverilog .
 ### Working
