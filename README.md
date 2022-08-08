@@ -1,7 +1,7 @@
 # 2-by-3-frequency-divider
 ### CONTRIBUTORS: Arunvenkat C.A., Ashutosh, Ashutosh Routray, Claudius D'Souza
 ## Abstract of the project:
-### Aim: Design an algorithm to simulate a 2-by-3-frequency divider in iverilog .
+### Aim: Design an algorithm to simulate a 2-by-3-frequency divider in iverilog.
 ### Working
 - Has 2 inputs, the clock signal clk and the modulus control signal mc .
 - The program divides the input frequency signal by reading the modulus control or mc value. (This is specified in the testbench)
