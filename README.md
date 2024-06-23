@@ -1,6 +1,6 @@
 # 2-by-3-frequency-divider
-### CONTRIBUTORS: Arunvenkat C.A., Ashutosh, Ashutosh Routray, Claudius D'Souza
-## Abstract of the project:
+
+## Abstract
 ### Aim: Design an algorithm to simulate a 2-by-3-frequency divider in iverilog.
 ### Working
 - Has 2 inputs, the clock signal clk and the modulus control signal mc .
@@ -53,3 +53,7 @@ Frequency Divider Circuits or Frequency Dividers are an integral part of many co
 3. Radar and Satellite Communication
 4. Military Equipment
 5. RF Devices
+
+
+### Contributors
+Arunvenkat C.A., Ashutosh, Ashutosh Routray, Claudius D'Souza
